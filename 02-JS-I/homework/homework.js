@@ -61,7 +61,7 @@ function sonIguales(x, y) {
   // De lo contrario, devuelve "false"
   // Tu código: 
   if(x === y) {return true;}
-   { return false;}
+   else { return false;}
 }
 
 function tienenMismaLongitud(str1, str2) {
@@ -78,7 +78,7 @@ function menosQueNoventa(num) {
   // De lo contrario, devuelve "false"
   // Tu código: 
   if (num < 90 ) { return true;} 
-  {return false;}
+  else {return false;}
 }
 
 function mayorQueCincuenta(num) {
@@ -86,7 +86,7 @@ function mayorQueCincuenta(num) {
   // De lo contrario, devuelve "false"
   // Tu código: 
   if (num > 50) {return true;}
-  {return false;}
+  else {return false;}
 }
 
 function obtenerResto(x, y) {
@@ -100,7 +100,7 @@ function esPar(num) {
   // De lo contrario, devuelve "false"
   // Tu código: 
   if (num %2 === 0) {return true;} 
-   {return false;}
+   else {return false;}
 }
 
 function esImpar(num) {
@@ -108,7 +108,7 @@ function esImpar(num) {
   // De lo contrario, devuelve "false"
   // Tu código: 
   if(num % 2 === 1) {return true;}
-   {return false;}
+  else {return false;}
 }
 
 function elevarAlCuadrado(num) {
@@ -146,14 +146,14 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código: 
-  return 'Soy ' + 'Henry'+'!';
+  return 'hello ' + 'world'+'!';
 }
 
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código: 
-  return 'hello '+'world';
+  return 'Soy '+'Henry';
 }
 
 function obtenerSaludo(nombre) {
