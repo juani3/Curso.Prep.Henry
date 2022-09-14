@@ -68,8 +68,8 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código: 
-  if (str1.lenght === str2.lenght) {return true;} 
-  {return false;}
+  if ((str1.lenght) === (str2.lenght)) {return true;} 
+  else {return false;}
 
 }
 
@@ -146,27 +146,27 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código: 
-  return 'str '+'str2'+'!';
+  return 'hello ' + 'world'+'!';
 }
 
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código: 
-  return 'nombre '+'apellido';
+  return 'Soy '+'Henry';
 }
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código: 
-  return 'Hola '+'nombre'+'!';
+  return 'Hola '+'Martin'+'!';
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un cuadrado teniendo su altura y ancho
   // Tu código: 
-  return (Math.height * Math.width);
+  return (Math.height(alto) * Math.width(ancho));
 }
 
 
