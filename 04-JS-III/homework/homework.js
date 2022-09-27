@@ -16,7 +16,7 @@ function devolverUltimoElemento(array) {
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
-  return array.lenght;
+  return array.push();
 }
 
 function incrementarPorUno(array) {
@@ -24,28 +24,26 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-  var nuevoArray = [];
-  for (var i = 0; i < array.lenght; i++) {
-  nuevoArray = array[i] + 1;
-  }
-  return nuevoArray;
-  }
+  let incrementados = array.map(item => item + 1);
+  return incrementados;
+   }
 
 function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
-  array.push('elemento');
-  return array;
-}
+   array.push(elemento);
+   return array;
+
+  }
 
 function agregarItemAlComienzoDelArray(array, elemento) {
   // Añade el "elemento" al comienzo del array
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
-  array.unshift('elemento');
-  return array;
+   array.unshift(elemento);
+   return array;
 
 }
 
@@ -63,33 +61,26 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
-  for (let i = 0; i < array.lenght; i++){ 
-  if (array [i] === 'elemento') {return true;}
-  }
-  {return false;} 
-    
-}
+  const item = (element) => element === elemento;
+  return array.some(item);
+  } 
+  
 
 function agregarNumeros(numeros) {
   // "array" debe ser una matriz de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
-  var array = 0;
-  for (var i = 0; i < numeros.lenght; i++) {  
-    array += numeros[i];
+  let suma = numeros.reduce((sum, current) => sum + current, 0) ;
+  return suma;
   }
-   return array;
-}
 
 function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
-  var promedio = 0;   
-    for (var i = 0; i < array.lenght; i++) {
-       promedio += array[i];
-      }
-    return promedio / array.lenght;
+  var suma = resultadosTest.reduce((sum, current) => sum + current, 0);
+  let promedio = suma / resultadosTest.push();
+  return promedio;
     
 }
 
@@ -106,11 +97,12 @@ function multiplicarArgumentos() {
   // Si no se pasan argumentos devuelve 0
   // Si se pasa un argumento, simplemente devuélvelo
   // Tu código: 
-  if (arguments < 1) return 0;
+  if (arguments.length < 1) return 0;
   var result = 1;
-  for (let i = 0; i < arguments.lenght; i++){
-  result *= arguments[i]; 
+  for (let i = 0; i < arguments.length; i++){
+  result *= arguments[i];
   }
+  return result;
 }
 
 // No modificar nada debajo de esta línea
